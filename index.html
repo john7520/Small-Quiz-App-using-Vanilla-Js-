@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Quiz App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="course-choice question-block">
+            <h2 class="welcome">Welcome To This Quiz App</h2>
+            <p>Please select the course to start quiz</p>
+            <div class="large"></div>
+            <div class="course">
+                <button class="js">JavaScript</button>
+                <button class="html">HTML</button>
+                <button class="css">CSS</button>
+                <button class="java">Java</button>
+                <button class="dsa">DSA</button>
+                <button class="com-net">ComputerNetworks</button>
+                <button class="op-syt">OperatingSystems</button>
+                <button class="cyber">CyberSecurity</button>
+            </div>
+            <div>
+                <button class="button1">Try Again All courses</button>
+                <button class="button2">View overall status</button>
+            </div>
+        </div>
+        <div class="overall-status question-block hidden" >
+            <div class="list">
+                <h2>Thank You!!!</h2>
+                <div class="large"></div>
+                <p class="update-score">Your score is 0 out of 10</p>
+                <button class="back-to-quiz">Back To Quiz</button>
+            </div>
+            
+            <p>Overall Status:</p>
+            <div class="max">
+                    <div class="min final-result-status"></div>
+            </div>
+            <p class="final-result-percent">0%</p>
+
+
+            <button class="final-result">View Status</button>
+            <div class="status hidden">
+                <h4>JavaScript</h4>
+                <div class="max">
+                    <div class="min js-status"></div>
+                </div>
+                <p class="result-percent js-percent">0%</p>
+
+                <h4>HTML</h4>
+                <div class="max">
+                    <div class="min html-status"></div>
+                </div>
+                <p class="result-percent html-percent">0%</p>
+
+                <h4>CSS</h4>
+                <div class="max">
+                    <div class="min css-status"></div>
+                </div>
+                <p class="result-percent css-percent">0%</p>
+
+                <h4>Java</h4>
+                <div class="max">
+                    <div class="min java-status"></div>
+                </div>
+                <p class="result-percent java-percent">0%</p>
+
+                <h4>DSA(Algorithm)</h4>
+                <div class="max">
+                    <div class="min dsa-status"></div>
+                </div>
+                <p class="result-percent dsa-percent">0%</p>
+
+                <h4>ComputerNetworks</h4>
+                <div class="max">
+                    <div class="min com-status"></div>
+                </div>
+                <p class="result-percent com-percent">0%</p>
+
+                <h4>CyberSecurity</h4>
+                <div class="max">
+                    <div class="min cyber-status"></div>
+                </div>
+                <p class="result-percent cyber-percent">0%</p>
+
+                <h4>OperatingSystems</h4>
+                <div class="max">
+                    <div class="min op-status"></div>
+                </div>
+                <p class="result-percent op-percent">0%</p>
+
+                <button class="reset">Reset</button>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

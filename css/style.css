@@ -1,0 +1,210 @@
+body{
+    background:linear-gradient(135deg,rgb(102, 102, 220),rgb(103, 103, 218));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:sans-serif;
+
+    font-family:'Courier New', Courier, monospace;
+
+}
+.question-block{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgb(124, 124, 251);
+    margin-bottom: 20px;
+    width: 350px;
+    margin-top: 10px;
+    
+}
+.question-block:hover{
+    transform: translateY(-1px);
+    box-shadow: 6px 6px 10px rgb(124, 124, 251);
+}
+h2{
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+p{
+    margin-top: 0;
+    font-size: 20px;
+    width: 100%;
+    
+}
+
+.large,.large-f{
+    height: 3px;
+    background-color: rgb(85, 85, 197);
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 20px;
+}
+.large-f{
+    margin-left: 35%;
+    width: 29%;
+    height: 1.5px;
+}
+
+.next-btn,.back-btn{
+    width: 45%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: rgb(70, 70, 227);
+    border: none;
+    border-radius: 6px;
+    margin-left: 25%;
+    margin-right: 10px;
+    box-shadow: 0px 0px 10px rgb(74, 84, 182);
+    cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.next-btn:hover,.next-btn:active,.back-btn:active,.back-btn:hover{
+    background-color: rgb(44, 44, 163);
+    box-shadow: 5px 5px 10px rgb(74, 84, 182);
+}
+.hidden{
+    display: none;
+}
+.display{
+    display: flex;
+}
+.disable-btn{
+    pointer-events: none;
+    cursor: not-allowed !important;
+}
+.choice-btn{
+    padding: 15px;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    /* border: none; */
+    border-width: 1px;
+    cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.choice-btn:hover{
+    background-color: rgb(14, 13, 13);
+    color: #fff;
+}
+
+@media(min-width:600px){
+    .question-block{
+        width: 500px;
+    }
+}
+@media(min-width:768px){
+    .question-block{
+        width: 600px;
+    }
+}
+.welcome{
+    background-color: rgb(70, 70, 227);
+    padding: 10px 0px;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.course{
+    display: flex;
+    flex-direction: column;
+}
+.course button,.final-result,.back-to-quiz,.reset{
+    margin-bottom: 10px;
+    padding: 6px 0px;
+    background-color: rgb(76, 76, 245);
+    color: whitesmoke;
+    font-size: 18px;
+    font-family:'Courier New', Courier, monospace;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    
+}
+.reset{
+    margin-top: 10px;
+    width: 100%;
+}
+.course button:hover,.course button:active,.final-result:active,.back-to-quiz:hover,.reset{
+    box-shadow: 0px 0px 10px rgb(69, 77, 147);
+    transform: translateY(-5px) scale(1.05);
+    background-color: rgb(50, 50, 190);
+}
+.overall-status,.list{
+    display: flex;
+    flex-direction: column;
+}
+.overall-status div{
+    margin-bottom: 20px;
+}
+.max{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(180, 168, 168);
+    border-radius: 10px;
+    margin-bottom: 0;
+    
+}
+.min{
+    border-radius: 10px;
+    max-width: 100%;
+    width: 0%;
+    height: 10px;
+    background-color: rgb(53, 53, 189);
+}
+h4{
+    margin-bottom: 0;
+    text-align: center;
+}
+.result-percent,.final-result-percent{
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 0;
+    
+}
+.final-result-percent{
+    margin-bottom:10px;
+}
+.hidden{
+    display: none;
+}
+
+.display-block{
+    display: block;
+}
+
+.correct-answer{
+    background-color: green;
+    color: whitesmoke;
+}
+
+.button1,.button2{
+    width:48%;
+    margin-top: 30px;
+    padding: 6px;
+    background-color:green;
+    color: whitesmoke;
+    font-family:'Courier New', Courier, monospace;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+    
+}
+.button1:hover,.button2:hover,.button1:active,.button2:active{
+    background-color: rgb(72, 72, 204);
+    transform: translateY(-5px);
+
+}
